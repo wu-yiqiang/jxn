@@ -57,8 +57,8 @@ import footerlogo from '@/assets/foot_logo.png'
   display: grid;
   row-gap: 20px;
   .infos {
-    border-top: 1px solid rgb(58, 58, 58);
-    padding-top: 50px;
+    border-bottom: 1px solid rgb(58, 58, 58);
+    padding-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;

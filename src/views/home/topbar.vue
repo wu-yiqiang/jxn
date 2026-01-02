@@ -23,7 +23,7 @@ const handleAbout = () => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 200px;
+  padding: 8px 100px;
   .leftbox {
     font-size: 13px;
   }
