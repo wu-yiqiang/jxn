@@ -5,6 +5,7 @@ import Bottombar from './bottombar.vue'
 import Course from '@/views/course/index.vue'
 import Assiasnt from '@/views/assisant/index.vue'
 import Contact from '@/views/contact/index.vue'
+import Media from '@/views/media/index.vue'
 import { TABSKEYS } from './data'
 import { ref } from 'vue'
 const tab = ref(TABSKEYS.HOME)
@@ -16,7 +17,7 @@ const tabs = [
   { label: '升本助手', value: TABSKEYS.ASSISSANT , component: Assiasnt},
   // { label: '上岸资料', value: TABSKEYS.FILES , component: Course},
   { label: '联系我们', value: TABSKEYS.CONTACT , component: Contact},
-  { label: '媒体合伙人', value: TABSKEYS.UNIN , component: Course},
+  { label: '媒体合伙人', value: TABSKEYS.UNIN , component: Media},
 ]
 </script>
 
