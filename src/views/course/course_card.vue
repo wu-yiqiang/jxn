@@ -1,5 +1,5 @@
 <template>
-  <section class="course_card">
+  <section class="course_card" @click="handleDetails">
     <div class="images">
       <img class="image" :src="image" alt="">
       <img class="typeimage" :src="typeImage" />
@@ -9,14 +9,20 @@
       <div class="sectitle">{{ target?.secTitle }}</div>
       <div class="date">开班日期： {{target?.startDate}}</div>
       <div class="tagbox">
-        <div class="tag"></div>
+        <div class="tag">
+          <div v-if="!target?.location?.length" class="empty">暂无</div>
+          <div v-if="!target?.time?.length" class="empty time-empty">暂无</div>
+        </div>
         <div class="number">已有{{target?.vetifyNumber}}人报名</div>
       </div>
     </div>
   </section>
 </template>
 <script lang="ts" setup>
+import router from '@/router'
 import { reactive, watch, computed, ref } from 'vue'
+import { subjectType } from './datas'
+const emit = defineEmits('selected')
 const props = defineProps({
   target: {
     type: Object,
@@ -28,8 +34,16 @@ const image = computed(() => {
   return new URL(`../../assets/${props?.target?.image}`, import.meta.url).href
 })
 const typeImage = computed(() => {
-  return new URL(`../../assets/${props?.target?.type}`, import.meta.url).href
+  let str = ''
+  if (props?.target?.type === subjectType.GGK) str = 'course_center_ggk.png'
+  if (props?.target?.type === subjectType.QKK) str = 'course_center_qkk.png'
+  if (props?.target?.type === subjectType.TSK) str = 'course_center_tsk.png'
+  if (props?.target?.type === subjectType.ZYK) str = 'course_center_zyk.png'
+  return new URL(`../../assets/${str}`, import.meta.url).href
 })
+const handleDetails = () => {
+  emit('selected', props?.target?.id)
+}
 </script>
 <style lang="scss" scoped>
 .course_card{
@@ -65,14 +79,36 @@ const typeImage = computed(() => {
     }
     .sectitle {
       font-size: 14px;
-
+      line-height: 20px;
     }
     .date {
       margin-top: 20px;
+      font-size: 14px;
     }
     .tagbox {
       display: flex;
+      align-items: center;
       justify-content: space-between;
+      .tag {
+        display: flex;
+        column-gap: 10px;
+             .empty {
+        padding: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 4px;
+        color: #00BAFF;
+        background-color: #E1F7FF;
+      }
+      .time-empty {
+        color: #FF6000;
+        background-color: #FFF2E2;
+      }
+      }
+ 
+    }
+    .number {
+      font-size: 14px;
     }
   }
 }

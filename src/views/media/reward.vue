@@ -70,6 +70,7 @@ import reward_card from './reward_card.vue';
       .itemtitle {
         color: rgb(54, 102, 255);
         font-size: 14px;
+        line-height: 20px;
       }
       .itemcontent {
         flex: 1;

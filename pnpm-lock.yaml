@@ -17,7 +17,7 @@ specifiers:
   husky: ^8.0.3
   less: ^4.2.0
   lint-staged: ^14.0.1
-  lodash-es: ^4.17.21
+  lodash-es: ^4.17.22
   pinia: ^2.1.6
   prettier: ^3.0.3
   sass: ^1.97.1
