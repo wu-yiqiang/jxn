@@ -1,9 +1,10 @@
 <template>
   <section class="reward_card">
-   <div class="title">
-    <div class="index">{{ index }}</div>
-    {{ title }}</div>
-   <slot></slot>
+    <div class="title">
+      <div class="index">{{ index }}</div>
+      {{ title }}
+    </div>
+    <slot></slot>
   </section>
 </template>
 <script lang="ts" setup>
@@ -21,7 +22,7 @@ const props = defineProps({
 })
 </script>
 <style lang="scss" scoped>
-.reward_card{
+.reward_card {
   flex: 1;
   border-radius: 4px;
   display: flex;
@@ -30,7 +31,7 @@ const props = defineProps({
   height: 360px;
   background-image: url('../../assets/reward_bg.png');
   background-repeat: no-repeat;
-  background-size:100% 100%; 
+  background-size: 100% 100%;
   .title {
     margin-top: 90px;
     font-size: 20px;
@@ -40,7 +41,7 @@ const props = defineProps({
     column-gap: 10px;
     justify-content: center;
     .index {
-      color: #3874F6;
+      color: #3874f6;
     }
   }
 }

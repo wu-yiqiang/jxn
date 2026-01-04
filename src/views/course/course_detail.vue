@@ -9,11 +9,11 @@
 </template>
 <script lang="ts" setup>
 import { reactive, watch, computed, ref } from 'vue'
-import hot_course from './hot_course.vue';
+import hot_course from './hot_course.vue'
 </script>
 <style lang="scss" scoped>
 .course_detail {
-  padding: 20px 100px;
+  padding: 20px var(--padding-width);
 
   .title {
     .breadcum {
@@ -25,7 +25,6 @@ import hot_course from './hot_course.vue';
   .contents {
     display: flex;
     justify-content: space-between;
-
   }
 }
 </style>

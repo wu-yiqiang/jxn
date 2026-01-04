@@ -1,15 +1,15 @@
 <template>
-  <section class="theme" >
-  <div class="title">{{ title }}</div>
-  <div class="sectitle">{{ secTitle }}</div>
-  <div class="contents" :style="{ backgroundImage: 'url(' + image + ')' }">
-    <div class="left">
-      <slot name="left" />
+  <section class="theme">
+    <div class="title">{{ title }}</div>
+    <div class="sectitle">{{ secTitle }}</div>
+    <div class="contents" :style="{ backgroundImage: 'url(' + image + ')' }">
+      <div class="left">
+        <slot name="left" />
+      </div>
+      <div class="right">
+        <slot name="right" />
+      </div>
     </div>
-    <div class="right">
-      <slot name="right" />
-    </div>
-  </div>
   </section>
 </template>
 <script lang="ts" setup>
@@ -36,7 +36,7 @@ const image = computed(() => {
 })
 </script>
 <style lang="scss" scoped>
-.theme{
+.theme {
   .title {
     font-size: 30px;
     text-align: center;

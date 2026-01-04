@@ -1,10 +1,10 @@
 <template>
-  <section class="theme" >
-  <div class="title">{{ title }}</div>
-  <div class="sectitle">{{ secTitle }}</div>
-  <div class="contents">
-    <slot />
-  </div>
+  <section class="theme">
+    <div class="title">{{ title }}</div>
+    <div class="sectitle">{{ secTitle }}</div>
+    <div class="contents">
+      <slot />
+    </div>
   </section>
 </template>
 <script lang="ts" setup>
@@ -23,7 +23,7 @@ const props = defineProps({
 })
 </script>
 <style lang="scss" scoped>
-.theme{
+.theme {
   .title {
     font-size: 30px;
     text-align: center;

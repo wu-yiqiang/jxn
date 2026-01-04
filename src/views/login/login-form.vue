@@ -16,11 +16,10 @@
       <button class="button">登录</button>
     </div>
   </div>
-
 </template>
 <script lang="ts" setup>
 import { reactive, watch, computed, ref } from 'vue'
-import { STATUS } from './datas';
+import { STATUS } from './datas'
 const emit = defineEmits(['update'])
 const handleRegister = () => {
   emit('update', STATUS.REGISTER)

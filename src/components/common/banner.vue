@@ -1,6 +1,6 @@
 <template>
   <section class="Banner">
-   <img :src="banner" />
+    <img :src="banner" />
   </section>
 </template>
 <script lang="ts" setup>
@@ -13,7 +13,7 @@ const props = defineProps({
 })
 </script>
 <style lang="scss" scoped>
-.Banner{
+.Banner {
   padding: 20px 0;
   img {
     width: 100%;

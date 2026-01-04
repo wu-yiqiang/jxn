@@ -1,30 +1,30 @@
 <template>
   <section class="Media">
-   <div class="banner">
-    <div class="cards">
-      <div class="card">
-        <img :src="part1" alt="">
-        <div class="title">
-          <div class="title">不限平台</div>
-          <div class="sectitle">抖音、快手、小红书等均可</div>
+    <div class="banner">
+      <div class="cards">
+        <div class="card">
+          <img :src="part1" alt="" />
+          <div class="title">
+            <div class="title">不限平台</div>
+            <div class="sectitle">抖音、快手、小红书等均可</div>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img :src="part2" alt="">
-        <div class="title">
-          <div class="title">不限内容</div>
-          <div class="sectitle">直接或间接含佳鑫诺元素</div>
+        <div class="card">
+          <img :src="part2" alt="" />
+          <div class="title">
+            <div class="title">不限内容</div>
+            <div class="sectitle">直接或间接含佳鑫诺元素</div>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img :src="part3" alt="">
-        <div class="title">
-          <div class="title">不限次数</div>
-          <div class="sectitle">达标即可得奖金，多发多得</div>
+        <div class="card">
+          <img :src="part3" alt="" />
+          <div class="title">
+            <div class="title">不限次数</div>
+            <div class="sectitle">达标即可得奖金，多发多得</div>
+          </div>
         </div>
       </div>
     </div>
-   </div>
     <Cash />
     <Case />
     <reward />
@@ -42,7 +42,7 @@ import Case from './case.vue'
 import reward from './reward.vue'
 </script>
 <style lang="scss" scoped>
-.Media{
+.Media {
   .banner {
     height: 440px;
     background-image: url('../../assets/partent.png');
@@ -66,7 +66,7 @@ import reward from './reward.vue'
         .title {
           font-size: 18px;
           font-weight: 500;
-          color: #3874F6;
+          color: #3874f6;
         }
         .sectitle {
           margin-top: 10px;

@@ -1,13 +1,13 @@
 <template>
   <section class="hot_card">
     <div class="image">
-      <img :src="image" alt="" width="120px">
+      <img :src="image" alt="" width="120px" />
     </div>
     <div class="titles">
       <div class="title">{{ target?.title }}</div>
-      <div class="number">已有{{target?.vetifyNumber}}人报名</div>
+      <div class="number">已有{{ target?.vetifyNumber }}人报名</div>
     </div>
-   </section>
+  </section>
 </template>
 <script lang="ts" setup>
 import { reactive, watch, computed, ref } from 'vue'
@@ -15,7 +15,7 @@ const props = defineProps({
   target: {
     type: Object,
     required: true,
-    default: () => { },
+    default: () => {},
   },
 })
 const image = computed(() => {
@@ -23,7 +23,7 @@ const image = computed(() => {
 })
 </script>
 <style lang="scss" scoped>
-.hot_card{
+.hot_card {
   display: flex;
   align-content: space-between;
   margin-bottom: 14px;

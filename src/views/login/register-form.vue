@@ -26,8 +26,7 @@
         <SvgIcon name="lock" size="20" />
         <input placeholder="请输入验证码" /> <button class="sendcode">发送验证码</button>
       </div>
-      <div class="login" @click="handleLogin">
-        已有账号？<span class="register">去登录</span></div>
+      <div class="login" @click="handleLogin">已有账号？<span class="register">去登录</span></div>
     </div>
     <div class="buttons">
       <button class="button">立即注册</button>
@@ -36,14 +35,14 @@
 </template>
 <script lang="ts" setup>
 import { reactive, watch, computed, ref } from 'vue'
-import { schools, STATUS, years } from './datas';
+import { schools, STATUS, years } from './datas'
 const emit = defineEmits(['update'])
 const handleLogin = () => {
   emit('update', STATUS.LOGIN)
 }
 const formState = ref({
   year: '',
-  school: ''
+  school: '',
 })
 </script>
 <style lang="scss" scoped>
@@ -113,7 +112,6 @@ const formState = ref({
           &:focus {
             border: none;
           }
-
         }
       }
 
@@ -132,13 +130,11 @@ const formState = ref({
       font-size: 14px;
 
       .register {
-
         color: rgb(2, 187, 255);
         cursor: pointer;
         font-size: 14px;
       }
     }
-
   }
 
   .buttons {

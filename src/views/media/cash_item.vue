@@ -1,6 +1,6 @@
 <template>
   <section class="cash_item">
-    <img :src="image" alt="">
+    <img :src="image" alt="" />
     <div class="title">{{ title }}</div>
   </section>
 </template>
@@ -20,11 +20,11 @@ const props = defineProps({
 })
 </script>
 <style lang="scss" scoped>
-.cash_item{
-   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.cash_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   .title {
     font-size: 20px;
     font-weight: 500;

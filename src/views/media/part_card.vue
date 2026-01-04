@@ -1,10 +1,10 @@
 <template>
   <section class="case_card">
-   <div class="title">扫码报名媒体合伙人</div>
-   <div class="contents">加入了解更多报名方法和最新活动</div>
-   <div class="code">
-    <img :src="code" alt="">
-   </div>
+    <div class="title">扫码报名媒体合伙人</div>
+    <div class="contents">加入了解更多报名方法和最新活动</div>
+    <div class="code">
+      <img :src="code" alt="" />
+    </div>
   </section>
 </template>
 <script lang="ts" setup>
@@ -15,7 +15,7 @@ const props = defineProps({
     required: true,
     default: '',
   },
-  sectitle:  {
+  sectitle: {
     type: String,
     required: true,
     default: '',
@@ -23,7 +23,7 @@ const props = defineProps({
 })
 </script>
 <style lang="scss" scoped>
-.case_card{
+.case_card {
   flex: 1;
   background-color: white;
   padding: 20px 10px;
@@ -36,7 +36,7 @@ const props = defineProps({
   .title {
     font-size: 20px;
     font-weight: 600;
-    color: #3874F6;
+    color: #3874f6;
   }
   .contents {
     flex: 1;

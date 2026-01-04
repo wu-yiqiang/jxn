@@ -10,14 +10,14 @@ import { TABSKEYS } from './data'
 import { ref } from 'vue'
 const tab = ref(TABSKEYS.HOME)
 const tabs = [
-  { label: '首页', value: TABSKEYS.HOME, component: Course, },
-  { label: '选课程', value: TABSKEYS.COURSE , component: Course},
+  { label: '首页', value: TABSKEYS.HOME, component: Course },
+  { label: '选课程', value: TABSKEYS.COURSE, component: Course },
   { label: '找名师', value: TABSKEYS.TEACHER, component: Course },
-  { label: '升本情况', value: TABSKEYS.SCHOOL , component: Course},
-  { label: '升本助手', value: TABSKEYS.ASSISSANT , component: Assiasnt},
+  { label: '升本情况', value: TABSKEYS.SCHOOL, component: Course },
+  { label: '升本助手', value: TABSKEYS.ASSISSANT, component: Assiasnt },
   // { label: '上岸资料', value: TABSKEYS.FILES , component: Course},
-  { label: '联系我们', value: TABSKEYS.CONTACT , component: Contact},
-  { label: '媒体合伙人', value: TABSKEYS.UNIN , component: Media},
+  { label: '联系我们', value: TABSKEYS.CONTACT, component: Contact },
+  { label: '媒体合伙人', value: TABSKEYS.UNIN, component: Media },
 ]
 </script>
 
@@ -25,7 +25,7 @@ const tabs = [
   <div class="Home">
     <Topbar />
     <Tabbar v-model:value="tab" :tabs="tabs" />
-    <component :is="tabs?.find(item => item.value === tab)?.component" />
+    <component :is="tabs?.find((item) => item.value === tab)?.component" />
     <Bottombar />
   </div>
 </template>

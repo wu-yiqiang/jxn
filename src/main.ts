@@ -8,6 +8,7 @@ import '@/assets/css/reset.css'
 import 'virtual:svg-icons-register'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import './style/index.scss'
 const app = createApp(App)
 
 app.use(ElementPlus)

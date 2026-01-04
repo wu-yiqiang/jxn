@@ -2,10 +2,9 @@
   <section class="courseform">
     <div class="title">全部课程</div>
     <div class="form">
-
       <el-form :inline="true" :model="formState">
         <el-form-item label="课程校区：">
-          <el-select v-model="formState.school" :options="locations" style="width: 240px" @change="handleChange"/>
+          <el-select v-model="formState.school" :options="locations" style="width: 240px" @change="handleChange" />
         </el-form-item>
         <el-form-item label="考试年份：">
           <el-select v-model="formState.year" :options="years" style="width: 240px" @change="handleChange" />
@@ -25,7 +24,7 @@ const props = defineProps({
   formState: {
     type: Object,
     required: true,
-    default: () => { },
+    default: () => {},
   },
 })
 const handleChange = () => {

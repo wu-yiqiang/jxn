@@ -1,10 +1,11 @@
 <template>
   <section class="location_card">
-   <div class="title">
-    <img :src="addr" alt="">
-    {{ target?.title }}</div>
-   <div class="addr">{{ target?.addr }}</div>
-   <div class="phone">咨询电话：{{ target?.phone }}</div>
+    <div class="title">
+      <img :src="addr" alt="" />
+      {{ target?.title }}
+    </div>
+    <div class="addr">{{ target?.addr }}</div>
+    <div class="phone">咨询电话：{{ target?.phone }}</div>
   </section>
 </template>
 <script lang="ts" setup>
@@ -19,8 +20,8 @@ const props = defineProps({
 })
 </script>
 <style lang="scss" scoped>
-.location_card{
-  background-color: #F5F6F9;
+.location_card {
+  background-color: #f5f6f9;
   padding: 20px;
   border-radius: 8px;
   display: grid;
@@ -29,15 +30,16 @@ const props = defineProps({
     font-size: 14px;
     font-weight: 600;
     color: black;
-    img{
+    img {
       width: 14px;
       height: 14px;
     }
   }
-  .addr,.phone {
+  .addr,
+  .phone {
     font-size: 12px;
     font-weight: 500;
-    color: #3A3D4B;
+    color: #3a3d4b;
     line-height: 20px;
   }
 }

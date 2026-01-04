@@ -1,19 +1,19 @@
 <template>
   <section class="course_card" @click="handleDetails">
     <div class="images">
-      <img class="image" :src="image" alt="">
+      <img class="image" :src="image" alt="" />
       <img class="typeimage" :src="typeImage" />
     </div>
     <div class="infos">
       <div class="title">{{ target?.title }}</div>
       <div class="sectitle">{{ target?.secTitle }}</div>
-      <div class="date">开班日期： {{target?.startDate}}</div>
+      <div class="date">开班日期： {{ target?.startDate }}</div>
       <div class="tagbox">
         <div class="tag">
           <div v-if="!target?.location?.length" class="empty">暂无</div>
           <div v-if="!target?.time?.length" class="empty time-empty">暂无</div>
         </div>
-        <div class="number">已有{{target?.vetifyNumber}}人报名</div>
+        <div class="number">已有{{ target?.vetifyNumber }}人报名</div>
       </div>
     </div>
   </section>
@@ -27,7 +27,7 @@ const props = defineProps({
   target: {
     type: Object,
     required: true,
-    default: () => { },
+    default: () => {},
   },
 })
 const image = computed(() => {
@@ -46,7 +46,7 @@ const handleDetails = () => {
 }
 </script>
 <style lang="scss" scoped>
-.course_card{
+.course_card {
   background-color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -54,7 +54,7 @@ const handleDetails = () => {
   .images {
     position: relative;
     .image {
-      border-radius: 4px 4px 0 0 ;
+      border-radius: 4px 4px 0 0;
       width: 100%;
     }
     .typeimage {
@@ -92,20 +92,19 @@ const handleDetails = () => {
       .tag {
         display: flex;
         column-gap: 10px;
-             .empty {
-        padding: 8px;
-        font-size: 12px;
-        font-weight: 600;
-        border-radius: 4px;
-        color: #00BAFF;
-        background-color: #E1F7FF;
+        .empty {
+          padding: 8px;
+          font-size: 12px;
+          font-weight: 600;
+          border-radius: 4px;
+          color: #00baff;
+          background-color: #e1f7ff;
+        }
+        .time-empty {
+          color: #ff6000;
+          background-color: #fff2e2;
+        }
       }
-      .time-empty {
-        color: #FF6000;
-        background-color: #FFF2E2;
-      }
-      }
- 
     }
     .number {
       font-size: 14px;

@@ -6,7 +6,7 @@
     <div class="middlebox">
       <div v-for="(tab, index) in tabs" :key="index" class="tab" @click="handleSelect(tab?.value)">
         <div class="title">{{ tab?.label }}</div>
-        <div :class="val === tab?.value ? 'bar checked': 'bar'"></div>
+        <div :class="val === tab?.value ? 'bar checked' : 'bar'"></div>
       </div>
     </div>
     <div class="rightbox" @click="handleLogin">注册/登录</div>
@@ -52,7 +52,7 @@ const handleLogin = () => {
   align-items: center;
   padding: 6px 0;
   background-color: rgba(0, 186, 255, 1);
-  padding: 0 100px;
+  padding: 0 var(--padding-width);
   height: 60px;
   column-gap: 20px;
   align-items: center;
@@ -85,8 +85,6 @@ const handleLogin = () => {
         background-color: rgba(254, 185, 3, 1);
       }
     }
-
-
   }
 
   .rightbox {

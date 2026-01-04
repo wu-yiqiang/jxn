@@ -2,8 +2,14 @@
   <section class="pagenation">
     <div class="nation">
       <div class="total">共 {{ total }} 条</div>
-      <el-pagination background layout="prev, pager, next"       v-model:current-page="pageNo"
- :pageSize="pageSize" :total="total" @current-change="handleChange" />
+      <el-pagination
+        background
+        layout="prev, pager, next"
+        v-model:current-page="pageNo"
+        :pageSize="pageSize"
+        :total="total"
+        @current-change="handleChange"
+      />
     </div>
   </section>
 </template>
@@ -28,7 +34,7 @@ const handleChange = () => {
 }
 </script>
 <style lang="scss" scoped>
-.pagenation{
+.pagenation {
   display: flex;
   align-items: center;
   justify-content: center;

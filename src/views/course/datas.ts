@@ -1,7 +1,7 @@
 export const All = '全部'
 export enum STATUS {
   LIST = 'list',
-  DETAILS = 'details'
+  DETAILS = 'details',
 }
 export const locations = [
   {

@@ -1,11 +1,11 @@
 <template>
   <section class="case_card">
-   <div class="title">{{ title }}</div>
-   <div class="contents">{{ contents  }}</div>
-   <div class="user">
-    <img :src="classmates" alt="">
-    {{ student }}
-   </div>
+    <div class="title">{{ title }}</div>
+    <div class="contents">{{ contents }}</div>
+    <div class="user">
+      <img :src="classmates" alt="" />
+      {{ student }}
+    </div>
   </section>
 </template>
 <script lang="ts" setup>
@@ -17,7 +17,7 @@ const props = defineProps({
     required: true,
     default: '',
   },
-  student:  {
+  student: {
     type: String,
     required: true,
     default: '',
@@ -30,7 +30,7 @@ const props = defineProps({
 })
 </script>
 <style lang="scss" scoped>
-.case_card{
+.case_card {
   flex: 1;
   background-color: white;
   padding: 20px 10px;
@@ -42,7 +42,7 @@ const props = defineProps({
   .title {
     font-size: 30px;
     font-weight: 600;
-    color: #3874F6;
+    color: #3874f6;
   }
   .contents {
     flex: 1;

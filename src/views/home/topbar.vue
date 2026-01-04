@@ -13,7 +13,7 @@
 </template>
 <script lang="ts" setup>
 import toplogo from '@/assets/top_logo.png'
-import router from '@/router';
+import router from '@/router'
 const handleAbout = () => {
   router.push('/about')
 }
@@ -23,7 +23,7 @@ const handleAbout = () => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 100px;
+  padding: 8px var(--padding-width);
   .leftbox {
     font-size: 13px;
   }

@@ -1,9 +1,16 @@
 <template>
   <section class="tabs">
-   <div class="title">全省分校</div>
-   <div class="location">
-      <div v-for="(location, index) in locations" :key="index" :class="location.location === val ? 'tab selected':'tab'" @click="handleSelected(location?.location)">{{ location.location }}</div>
-   </div>
+    <div class="title">全省分校</div>
+    <div class="location">
+      <div
+        v-for="(location, index) in locations"
+        :key="index"
+        :class="location.location === val ? 'tab selected' : 'tab'"
+        @click="handleSelected(location?.location)"
+      >
+        {{ location.location }}
+      </div>
+    </div>
   </section>
 </template>
 <script lang="ts" setup>
@@ -30,7 +37,7 @@ const handleSelected = (value: string) => {
 }
 </script>
 <style lang="scss" scoped>
-.tabs{
+.tabs {
   background-color: white;
   padding: 20px;
   border-radius: 6px;
@@ -53,12 +60,12 @@ const handleSelected = (value: string) => {
       font-weight: 500;
       padding: 6px 10px;
       &:hover {
-         color: #00BAFF;
+        color: #00baff;
       }
     }
   }
   .selected {
-    color: #00BAFF;
+    color: #00baff;
     background-color: #e3f5fd;
     border-radius: 2px;
   }
