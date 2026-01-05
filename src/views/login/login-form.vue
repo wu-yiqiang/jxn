@@ -13,16 +13,20 @@
       <div class="register" @click="handleRegister">免费注册</div>
     </div>
     <div class="buttons">
-      <button class="button">登录</button>
+      <button class="button" @click="handleLogin">登录</button>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
 import { reactive, watch, computed, ref } from 'vue'
 import { STATUS } from './datas'
+import router from '@/router'
 const emit = defineEmits(['update'])
 const handleRegister = () => {
   emit('update', STATUS.REGISTER)
+}
+const handleLogin = () => {
+  router.push('/home')
 }
 </script>
 <style lang="scss" scoped>

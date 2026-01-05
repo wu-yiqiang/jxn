@@ -1,6 +1,6 @@
 <template>
   <section class="aibot">
-   <div class="title"> 您好，我是鑫佳诺AI助教小诺</div>
+   <div class="title"> 您好，我是佳鑫诺AI助教小诺</div>
    <div class="contents">
     <div class="content">智能伴学</div>
     <div class="content">科学备考</div>

@@ -1,11 +1,11 @@
 <template>
   <section class="topbar">
-    <div class="leftbox">想升本就找鑫佳诺</div>
+    <div class="leftbox">想升本就找佳鑫诺</div>
     <div class="rightbox">
       <!-- <div class="location">1212</div> -->
       <div class="about" @click="handleAbout">
         <img :src="toplogo" alt="" />
-        关于鑫佳诺
+        关于佳鑫诺
       </div>
       <div class="phone">升本热线：16630103692</div>
     </div>
