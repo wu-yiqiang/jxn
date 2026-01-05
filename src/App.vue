@@ -7,7 +7,7 @@ import router from './router';
   <div class="start">
     <RouterView />
     <div class="rebot">
-      <Rebot v-if="router.currentRoute.value.path !== '/ai'" />
+      <Rebot v-if="!['/ai', '/login'].includes(router.currentRoute.value.path)" />
     </div>
   </div>
 
