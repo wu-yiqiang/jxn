@@ -2,7 +2,7 @@
   <section class="topbar">
     <div class="leftbox">想升本就找鑫佳诺</div>
     <div class="rightbox">
-      <div class="location">1212</div>
+      <!-- <div class="location">1212</div> -->
       <div class="about" @click="handleAbout">
         <img :src="toplogo" alt="" />
         关于鑫佳诺
