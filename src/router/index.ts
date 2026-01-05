@@ -12,7 +12,7 @@ const routes: Array<RouteRecordRaw> = [
   { path: '/login', name: 'Login', component: () => import('@/views/login/index.vue') },
   { path: '/about', name: 'About', component: () => import('@/views/about/index.vue') },
   { path: '/course_details', name: 'CourseDetails', component: () => import('@/views/course/course_detail.vue') },
-  // { path: '/demo', name: 'Demo', component: () => import('@/views/Demo.vue') },
+  { path: '/ai', name: 'Ai', component: () => import('@/views/ai/index.vue') },
 ]
 
 const router = createRouter({
