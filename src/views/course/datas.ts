@@ -140,6 +140,7 @@ export const courses = [
     location: '',
     time: '',
     year: 2028,
+    detailImages: ['a1.png', 'a2.png', 'a3.png', 'a4.png', 'a5.png'],
   },
   {
     id: 2,
@@ -153,6 +154,7 @@ export const courses = [
     vetifyNumber: 6849,
     time: '',
     year: 2027,
+    detailImages: ['a1.png', 'a2.png', 'a3.png', 'a4.png', 'a5.png'],
   },
   {
     id: 3,
@@ -166,6 +168,7 @@ export const courses = [
     vetifyNumber: 3075,
     time: '',
     year: 2026,
+    detailImages: ['c1.jpg', 'c2.jpg', 'c3.jpg'],
   },
   {
     id: 4,
@@ -179,6 +182,7 @@ export const courses = [
     vetifyNumber: 6956,
     time: '',
     year: 2026,
+    detailImages: ['d1.jpg', 'd2.jpg', 'd3.jpg', 'd4.jpg'],
   },
   {
     id: 5,
@@ -192,6 +196,7 @@ export const courses = [
     vetifyNumber: 1140,
     time: '',
     year: 2026,
+    detailImages: ['e1.jpg', 'e2.jpg', 'e3.jpg', 'e4.jpg'],
   },
   {
     id: 6,
@@ -205,6 +210,7 @@ export const courses = [
     location: '',
     time: '',
     year: 2026,
+    detailImages: ['f1.jpg', 'f2.jpg', 'f3.jpg', 'f4.jpg', 'f5.jpg'],
   },
   {
     id: 7,
@@ -218,6 +224,7 @@ export const courses = [
     location: '',
     time: '',
     year: 2027,
+    detailImages: ['g1.png', 'g2.png', 'g3.png'],
   },
   {
     id: 8,
@@ -231,6 +238,7 @@ export const courses = [
     location: '',
     time: '',
     year: 2027,
+    detailImages: ['f1.jpg', 'f2.jpg', 'f3.jpg', 'f4.jpg', 'f5.jpg'],
   },
   {
     id: 9,
@@ -244,6 +252,7 @@ export const courses = [
     location: '',
     time: '',
     year: 2027,
+    detailImages: ['h1.png'],
   },
   {
     id: 10,
@@ -257,6 +266,7 @@ export const courses = [
     location: '',
     time: '',
     year: 2026,
+    detailImages: ['a1.png', 'a2.png', 'a3.png', 'a4.png', 'a5.png'],
   },
   {
     id: 11,
@@ -270,6 +280,7 @@ export const courses = [
     location: '',
     time: '',
     year: 2027,
+    detailImages: ['i1.png', 'i2.png'],
   },
   {
     id: 12,
@@ -283,6 +294,7 @@ export const courses = [
     location: '',
     time: '',
     year: 2026,
+    detailImages: ['j1.jpg', 'j2.jpg', 'j3.jpg', 'j4.jpg'],
   },
   {
     id: 13,
@@ -296,5 +308,6 @@ export const courses = [
     location: '',
     time: '',
     year: 2026,
+    detailImages: ['k1.png', 'k2.png', 'k3.png', 'k4.png', 'k5.png', 'k6.png'],
   },
 ]

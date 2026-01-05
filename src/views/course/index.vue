@@ -7,7 +7,7 @@
     </div>
     <pagenation :total="total" :pageSize="formState.pageSize" :pageNo="formState.pageNo" @change="handlePage" />
   </section>
-  <course_detail v-else :courseId="currentCourseId" />
+  <course_detail v-else :courseId="currentCourseId" @course="status = STATUS.LIST"/>
 </template>
 <script lang="ts" setup>
 import { reactive, watch, computed, ref, onMounted } from 'vue'
@@ -69,7 +69,8 @@ onMounted(() => {
 </script>
 <style lang="scss" scoped>
 .Course {
-  padding: 0px var(--padding-width);
+  padding: 10px var(--padding-width);
+  margin-bottom: 20px;
   .cards {
     padding-bottom: 20px;
     display: grid;

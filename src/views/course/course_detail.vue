@@ -1,11 +1,12 @@
 <template>
   <section class="course_detail">
-    <div class="title"><strong class="breadcum">选课程</strong> > <strong class="breadcum">课程详情</strong></div>
+    <div class="title"><strong class="breadcum" @click="handleCourse">选课程</strong> > <strong class="breadcum">课程详情</strong></div>
     <div class="contents">
       <div class="leftbox">
         <course_info :target="target" />
+        <course_reduce :target="target" />
       </div>
-      <hot_course :target="target" />
+      <hot_course :target="target"/>
     </div>
   </section>
 </template>
@@ -13,7 +14,9 @@
 import { computed } from 'vue'
 import hot_course from './hot_course.vue'
 import course_info from './course_info.vue';
-import {courses} from './datas'
+import course_reduce from './course_reduce.vue';
+import { courses } from './datas'
+const emit = defineEmits('course')
 const props = defineProps({
   courseId: {
     type: Number,
@@ -24,6 +27,9 @@ const props = defineProps({
 const target = computed(() => {
   return courses?.find(item => item.id === props?.courseId)
 })
+const handleCourse = () => {
+  emit('course')
+}
 </script>
 <style lang="scss" scoped>
 .course_detail {
@@ -33,6 +39,7 @@ const target = computed(() => {
     .breadcum {
       font-size: 16px;
       font-weight: 600;
+      cursor: pointer;
     }
   }
 
