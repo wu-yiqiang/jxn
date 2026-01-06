@@ -11,12 +11,12 @@
         </div>
       </div>
     </div>
-    <pagenation :total="total" :pageSize="formState.pageSize" :pageNo="formState.pageNo" @change="handlePage" />
+    <pagenation :total="total" :page-size="formState.pageSize" :page-no="formState.pageNo" @change="handlePage" />
   </section>
 </template>
 <script lang="ts" setup>
-import { cloneDeep } from 'lodash-es';
-import { onMounted, ref } from 'vue';
+import { cloneDeep } from 'lodash-es'
+import { onMounted, ref } from 'vue'
 import pagenation from '@/components/common/pagenation.vue'
 const props = defineProps({
   lists: {
@@ -60,15 +60,16 @@ const total = ref(0)
     margin-bottom: 30px;
     .item {
       padding: 10px;
-      border-bottom: 1px solid #E5E5E5;
+      border-bottom: 1px solid #e5e5e5;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      height: 50px;
       .left {
         display: flex;
         column-gap: 20px;
         .index {
-          color: #D6DBE3;
+          color: #d6dbe3;
           font-weight: 500;
           font-size: 20px;
         }
