@@ -21,6 +21,7 @@ import liuyan from "@/assets/liuyan_icon.png"
   background-color: white;
   padding: 20px;
   border-radius: 6px;
+  height: fit-content;
   .title {
     display: flex;
     column-gap: 10px;
@@ -42,7 +43,7 @@ import liuyan from "@/assets/liuyan_icon.png"
     }
   }
   .button {
-    margin-top: 10px;
+    margin-top: 30px;
     font-size: 16px;
     color: white;
     height: 36px;
